@@ -1,0 +1,7 @@
+{
+  "Hello {name}!": "Hallo {name}!",
+  "{value, plural, =0 {no Person} =1 {one Person} other {# Persons}}":
+    "{value, plural, =0 {keine Person} =1 {eine Person} other {# Personen}}",
+  "Increment": "Mehr",
+  "{value, date, full}": "{value, date, full}"
+}

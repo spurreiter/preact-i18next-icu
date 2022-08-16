@@ -1,7 +1,7 @@
 {
   "name": "preact-i18next-icu",
-  "version": "0.0.0-0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "i18next provider with icu syntax for preact",
   "keywords": [
     "globalization",
     "i18n",
@@ -12,12 +12,70 @@
     "preact",
     "translation"
   ],
+  "homepage": "https://github.com/spurreiter/preact-i18next-icu#readme",
+  "bugs": {
+    "url": "https://github.com/spurreiter/preact-i18next-icu/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spurreiter/preact-i18next-icu.git"
+  },
   "license": "MIT",
-  "author": "spurreiter@users.noreply.github.com",
+  "author": "spurreiter",
   "type": "module",
   "main": "./src/index.js",
   "types": "./types",
+  "files": [
+    "src",
+    "types"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "all": "npm-run-all lint test types",
+    "build": "vite build",
+    "dev": "vite",
+    "coverage": "c8 jest",
+    "lint": "eslint --fix --ext .js,.jsx .",
+    "preview": "vite preview",
+    "test": "jest",
+    "types": "rimraf types; tsc --emitDeclarationOnly true --noEmitOnError && cp src/*.d.ts types"
+  },
+  "jest": {
+    "extensionsToTreatAsEsm": [
+      ".jsx"
+    ],
+    "preset": "jest-preset-preact",
+    "setupFiles": [],
+    "transform": {},
+    "transformIgnorePatterns": []
+  },
+  "dependencies": {
+    "i18next": "^21.9.0",
+    "i18next-browser-languagedetector": "^6.1.5",
+    "i18next-chained-backend": "^3.0.2",
+    "i18next-http-backend": "^1.4.1",
+    "i18next-icu": "^2.0.3",
+    "intl-messageformat": "^10.1.1",
+    "preact": "^10.10.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.3.0",
+    "@testing-library/preact": "^3.2.2",
+    "c8": "^7.12.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.22.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "jest-preset-preact": "^4.0.5",
+    "npm-run-all": "^4.1.5",
+    "preact-render-to-string": "^5.2.1",
+    "rimraf": "^3.0.2",
+    "sinon": "^14.0.0",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.7"
   }
 }

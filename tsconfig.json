@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "declarationDir": "types",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "strict": true,
+    "module": "es2022",
+    "target": "es2022",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+  },
+  "include": [
+    "src/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "test"
+  ]
+}

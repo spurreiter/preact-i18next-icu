@@ -1,0 +1,17 @@
+{
+  "My title": "Mein Titel",
+  "Welcome, {name}!": "Willkommen, {name}!",
+  "{value, plural, =0 {no Person} =1 {one Person} other {# Persons}}":
+    "{value, plural, =0 {keine Person} =1 {eine Person} other {# Personen}}",
+  "{gender, select, male {He} female {She} other {They}} will respond shortly.":
+    "{gender, select, male {Er wird} female {Sie wird} other {Sie werden}} bald antworten.",
+  "Born on {birthdate, date, full}":
+    "Geboren am {birthdate, date, full}",
+  "I have {value, number} cats.": "Ich habe {value, number} Katzen.",
+  "Almost {value, number, ::percent} of them are black.":
+    "Fast {value, number, ::percent} sind schwarz.",
+  "The price of this bagel is {value, number, ::sign-always compact-short currency/GBP}":
+    "Ein Bagel kostet {value, number, ::sign-always compact-short currency/GBP}",
+  "Sale begins {value, date, medium}":
+    "Der Verkauf startet am {value, date, medium}"
+}
