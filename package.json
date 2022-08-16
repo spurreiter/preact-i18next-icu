@@ -1,0 +1,23 @@
+{
+  "name": "preact-i18next-icu",
+  "version": "0.0.0-0",
+  "description": "",
+  "keywords": [
+    "globalization",
+    "i18n",
+    "i18next",
+    "icu",
+    "internationalization",
+    "localization",
+    "preact",
+    "translation"
+  ],
+  "license": "MIT",
+  "author": "spurreiter@users.noreply.github.com",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./types",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
