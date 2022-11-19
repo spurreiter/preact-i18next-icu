@@ -101,7 +101,6 @@ function Story (props) {
     <div>
       <a href={`#${title}`}
         tabIndex={0}
-        ariaRole='button'
         className={className}
         onClick={handleClick(_component, title)}
       >

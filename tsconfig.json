@@ -11,6 +11,8 @@
     "target": "es2022",
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
+    "emitDeclarationOnly": true,
+    "noEmitOnError": true
   },
   "include": [
     "src/*.js"

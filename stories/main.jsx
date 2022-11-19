@@ -14,21 +14,33 @@ function Control () {
 
   const clear = () => {
     // removeItem i18nextLng to use navigator.language
-    Object.keys(localStorage).forEach(key => localStorage.removeItem(key))
+    Object.keys(localStorage).forEach((key) => localStorage.removeItem(key))
     location.reload()
   }
 
   return (
     <p>
-      <button title="en-US" onClick={() => changeLanguage('en-US')}>🇺🇸</button>
-      <button title="en-GB" onClick={() => changeLanguage('en-GB')}>🇬🇧</button>
-      <button title="de" onClick={() => changeLanguage('de')}>🇩🇪</button>
-      <button title='clear localstorage' onClick={() => clear()}>🗑</button>
+      <button title="en-US" onClick={() => changeLanguage('en-US')}>
+        🇺🇸
+      </button>
+      <button title="en-GB" onClick={() => changeLanguage('en-GB')}>
+        🇬🇧
+      </button>
+      <button title="de" onClick={() => changeLanguage('de')}>
+        🇩🇪
+      </button>
+      <button title="clear localstorage" onClick={() => clear()}>
+        🗑
+      </button>
     </p>
   )
 }
 
-const options = { backend: { loadPath: '/stories/locales/{{lng}}/{{ns}}.json' } }
+const options = {
+  backend: {
+    loadPath: '/stories/locales/{{lng}}/{{ns}}.json'
+  }
+}
 
 render(
   <IntlProvider lngs={['en', 'de']} options={options}>
